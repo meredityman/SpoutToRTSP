@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<serverip>192.168.178.24</serverip>
+	<serverport>554</serverport>
+	<loop_nums>-1</loop_nums>
+	<multicast>0</multicast>
+	<metadata>1</metadata>	
+	<rtsp_over_http>0</rtsp_over_http>
+	<http_port>80</http_port>
+	<need_auth>0</need_auth>
+	<log_enable>1</log_enable>
+	<log_level>1</log_level>
+	
+	<pusher>
+		<suffix>pusher.rtsp</suffix>
+		<video>
+			<codec>H264</codec>
+			<width>512</width>
+			<height>512</height>
+			<framerate>25</framerate>
+		</video>
+		<audio>
+			<codec>AAC</codec>
+			<samplerate>44100</samplerate>
+			<channels>2</channels>
+		</audio>
+		<transfer>
+			<mode>RTSP</mode>
+			<ip></ip>
+			<vport>50001</vport>
+			<aport>50002</aport>
+		</transfer>		
+	</pusher>
+</config>
+

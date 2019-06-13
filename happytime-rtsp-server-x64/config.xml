@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<serverip>192.168.178.24</serverip>
+	<serverport>554</serverport>
+	<loop_nums>-1</loop_nums>
+	<multicast>1</multicast>
+	<metadata>1</metadata>	
+	<rtsp_over_http>1</rtsp_over_http>
+	<http_port>80</http_port>
+	<need_auth>0</need_auth>
+	<log_enable>1</log_enable>
+	<log_level>1</log_level>
+	
+	<user>
+		<username>admin</username>
+		<password>admin</password>
+	</user>
+	<user>
+		<username>user</username>
+		<password>123456</password>
+	</user>
+	
+	<output>
+		<url>screenlive</url>
+		<video>
+			<codec>H264</codec>
+			<width></width>
+			<height></height>
+			<framerate></framerate>
+		</video>
+		<audio>
+			<codec>G711U</codec>
+			<samplerate>8000</samplerate>
+			<channels>1</channels>
+		</audio>
+	</output>
+	
+	<output>
+		<url></url>
+		<video>
+			<codec>H264</codec>
+			<width></width>
+			<height></height>
+			<framerate></framerate>
+		</video>
+		<audio>
+			<codec>G711U</codec>
+			<samplerate></samplerate>
+			<channels></channels>
+		</audio>
+	</output>
+	
+	<proxy>
+		<suffix>proxy</suffix>
+		<url></url>
+		<user></user>
+		<pass></pass>
+	</proxy>
+	
+	<pusher>
+		<suffix>pusher.rtsp</suffix>
+		<video>
+			<codec>H264</codec>
+			<width>1280</width>
+			<height>720</height>
+			<framerate>25</framerate>
+		</video>
+		<audio>
+			<codec>AAC</codec>
+			<samplerate>44100</samplerate>
+			<channels>2</channels>
+		</audio>
+		<transfer>
+			<mode>RTSP</mode>
+			<ip></ip>
+			<vport>50001</vport>
+			<aport>50002</aport>
+		</transfer>		
+	</pusher>
+	
+	<backchannel>
+		<codec>G711U</codec>
+		<samplerate>8000</samplerate>
+		<channels>1</channels>
+	</backchannel>
+</config>
+

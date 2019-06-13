@@ -1,0 +1,76 @@
+[2019-06-13 11:35:26] : [DEBUG] rtsp_rx_thread, start
+[2019-06-13 11:35:28] : [INFO] new user over tcp from[192.168.178.24,57822]
+[2019-06-13 11:35:28] : [DEBUG] OPTIONS rtsp://192.168.178.24:554/pusher.rtsp RTSP/1.0
+CSeq: 1
+User-Agent: Lavf58.20.100
+
+
+[2019-06-13 11:35:28] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 3.8
+CSeq: 1
+Date: Thu, Jun 13 2019 09:35:28 GMT
+Public: DESCRIBE, SETUP, PLAY, PAUSE, OPTIONS, TEARDOWN, GET_PARAMETER, SET_PARAMETER, ANNOUNCE, RECORD
+
+
+[2019-06-13 11:35:28] : [DEBUG] ANNOUNCE rtsp://192.168.178.24:554/pusher.rtsp RTSP/1.0
+Content-Type: application/sdp
+CSeq: 2
+User-Agent: Lavf58.20.100
+Content-Length: 299
+
+
+[2019-06-13 11:35:28] : [DEBUG] ANNOUNCE rtsp://192.168.178.24:554/pusher.rtsp RTSP/1.0
+Content-Type: application/sdp
+CSeq: 2
+User-Agent: Lavf58.20.100
+Content-Length: 299
+
+
+[2019-06-13 11:35:28] : [DEBUG] v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=No Name
+c=IN IP4 192.168.178.24
+t=0 0
+a=tool:libavformat 58.20.100
+m=video 0 RTP/AVP 96
+b=AS:500
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1; sprop-parameter-sets=Z0LAHtsCgPaEABRYVATEtAA8WLuA,aMqMsg==; profile-level-id=42C01E
+a=control:streamid=0
+
+
+[2019-06-13 11:35:28] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 3.8
+CSeq: 2
+Date: Thu, Jun 13 2019 09:35:28 GMT
+
+
+[2019-06-13 11:35:28] : [DEBUG] SETUP rtsp://192.168.178.24:554/pusher.rtsp/streamid=0 RTSP/1.0
+Transport: RTP/AVP/UDP;unicast;client_port=32308-32309;mode=record
+CSeq: 3
+User-Agent: Lavf58.20.100
+
+
+[2019-06-13 11:35:28] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 3.8
+CSeq: 3
+Date: Thu, Jun 13 2019 09:35:28 GMT
+Session: 41;timeout=60
+Transport: RTP/AVP/UDP;unicast;client_port=32308-32309;server_port=30000-30001
+
+
+[2019-06-13 11:35:28] : [DEBUG] RECORD rtsp://192.168.178.24:554/pusher.rtsp RTSP/1.0
+Range: npt=0.000-
+CSeq: 4
+User-Agent: Lavf58.20.100
+Session: 41
+
+
+[2019-06-13 11:35:28] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 3.8
+CSeq: 4
+Date: Thu, Jun 13 2019 09:35:28 GMT
+Session: 41
+
+
+[2019-06-13 11:35:28] : [DEBUG] CRtspPusher::udpRecvThread, start
