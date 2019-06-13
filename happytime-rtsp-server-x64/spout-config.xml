@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
+	<serverip></serverip>
 	<serverport>554</serverport>
 	<loop_nums>-1</loop_nums>
 	<multicast>0</multicast>
